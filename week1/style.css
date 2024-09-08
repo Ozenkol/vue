@@ -1,0 +1,97 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+}
+
+nav h1{
+    margin: 10px 10px 10px 10px;
+    font-family: 'Courier New';
+}
+
+nav ul{
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul li {
+    display: flex;
+    margin: 10px;
+}
+
+.right-element {
+    float: right;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav div img {
+    margin: 10px 10px 10px 10px;
+    width: 25px;
+    height: 25px;
+}
+
+main {
+    padding: 70px;
+    background-color: rgb(230, 229, 228);
+}
+
+.a {
+    background-image: url("./assets/1.jpg");
+    background-size: 100%;
+    grid-area: a;
+}
+.b {
+    height: 15em;
+    background-image: url("./assets/2.jpg");
+    background-size: 100% 100%;
+    grid-area: b;
+}
+.c {
+    background-image: url("./assets/3.jpg");
+    background-size: 100%;
+    grid-area: c;
+}
+.d {
+    background-image: url("./assets/4.png");
+    background-size: 100%;
+    grid-area: d;
+}
+.e {
+    background-image: url("./assets/5.jpeg");
+    background-size: 100%;
+    grid-area: e;
+}
+
+
+.articles {
+    display: grid;
+    gap: 15px;
+    grid-template-areas: "a b c"
+                         "d b e";
+}
+
+.content {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(201, 38, 38);
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 10px 10px;
+}
+
+.content .tags .tag {
+    border-radius: 5px;
+    background-color: blue;
+    margin-right: 10px;
+    padding: 2px 2px 2px 2px;
+    color: white;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}

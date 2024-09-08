@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="root">
+            <p>x: <input v-model="x"></p>
+            <p>y: <input v-model="y"></p>
+            <p>--------------------</p>
+            <p>x + y: <span v-text="result"></p>
+        </div>
+        <script type="text/javascript">
+            function isNotNumericValue(value) {
+                return isNaN(value) || !isFinite(value);
+            }
+            var calc = new Vue({  
+                el: '#root',
+                data: {x: 0, y: 0, lastResult: 0},
+                computed: {
+                    result: function() {
+                        let x = parseFloat(this.x)
+                        if (isNotNumericValue(x)) {
+                            return this.lastResult
+                        }
+                        let y = parseFloat(this.y)
+                        if (isNotNumericValue(y)) {
+                            return this.la
+                        }
+                        this.lastResult = x + y;
+                        return this.lastResult;
+                    }
+                }
+            }); 
+        </script>
+    </body>
+</html>
