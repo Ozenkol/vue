@@ -93,6 +93,16 @@ main {
     margin: 10px 10px 10px 10px;
 }
 
+.content span {
+    color: black;
+    font-size: 0.75em;
+}
+
+.content header {
+    font-size: 1.2em;
+    color: brown;
+}
+
 .content .tags {
     margin-bottom: 10px;
 }
