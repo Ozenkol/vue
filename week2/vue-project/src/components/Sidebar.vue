@@ -48,6 +48,7 @@
         justify-content: space-around;
     }
     .heading {
+        cursor: pointer;
         background-color: rgb(240, 240, 240); 
         border-radius: 10px;
         margin-top: 10px;
@@ -67,6 +68,7 @@
         border-radius: 10px;
     }
     ul li {
+        cursor: pointer;
         font-family: "Jersey 10";
         text-align: center;
         font-size: 2em;

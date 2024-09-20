@@ -10,6 +10,7 @@
 
 <style scoped>
     img {
+        cursor: pointer;
         width: 70px;
     }
 </style>

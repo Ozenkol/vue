@@ -43,7 +43,10 @@
     }
     .heading span {
         color: #F39A92;
-        font-size: large;
+        font-size: 1.5em;
         font-weight: 500;
+    }
+    img {
+        cursor: pointer;
     }
 </style>

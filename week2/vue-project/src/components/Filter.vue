@@ -14,11 +14,15 @@
 <style scoped>
     @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
     option {
+        cursor: pointer;
+
         font-size: 1em;
         color: #1DE390;
         font-family: "Jersey 10";
     }
     select {
+        cursor: pointer;
+
         font-size: 2em;
         font-family: "Jersey 10";
         color: #1DE390;
@@ -35,5 +39,6 @@
     }
     select:focus {
         outline:none;
+
     }
 </style>

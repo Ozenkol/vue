@@ -180,6 +180,9 @@ import Filter from './Filter.vue';
         font-family: "Jersey 10";
     }
     select {
+
+        cursor: pointer;
+
         font-size: 2em;
         font-family: "Jersey 10";
         color: #1DE390;

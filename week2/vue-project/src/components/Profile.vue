@@ -12,6 +12,8 @@
 
 <style scoped>
     div {  
+        cursor: pointer;
+
         height: inherit;;
         background-color: #7DECFC;
         border-radius: 75px;
