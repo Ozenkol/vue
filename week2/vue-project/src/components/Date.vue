@@ -35,8 +35,8 @@
     span {
         background-color: rgb(91, 185, 205);
         box-shadow: 0px 0px 0.25em 0.25em rgb(91, 185, 205);
-        font-size: 1.75em;
-        font-family:'Times New Roman', Times, serif;
+        font-size: 2em;
+        font-family:'Jersey 10';
         border-radius: 5px;
     }
 </style>
