@@ -6,12 +6,13 @@
     </head>
     <body>
         <div id="root">
-            <p>x: <input v-model="x"></p>
+            <p>x: <input id="1" v-model="x"></p>
             <p>y: <input v-model="y"></p>
             <p>--------------------</p>
             <p>x + y: <span v-text="result"></p>
         </div>
         <script type="text/javascript">
+            console.log(document.getElementById('1'))
             function isNotNumericValue(value) {
                 return isNaN(value) || !isFinite(value);
             }

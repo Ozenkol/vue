@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -43,32 +47,32 @@ nav div img {
 
 main {
     padding: 70px;
-    background-color: rgb(230, 229, 228);
+    background-color: rgb(232, 232, 232);
 }
 
 .a {
-    background-image: url("./assets/1.jpg");
+    background-image: url("./assets/bg.jpg");
     background-size: 100%;
     grid-area: a;
 }
 .b {
     height: 20em;
-    background-image: url("./assets/2.jpg");
+    background-image: url("./assets/bg.jpg");
     background-size: 100% 100%;
     grid-area: b;
 }
 .c {
-    background-image: url("./assets/3.jpg");
+    background-image: url("./assets/bg.jpg");
     background-size: 100%;
     grid-area: c;
 }
 .d {
-    background-image: url("./assets/4.png");
+    background-image: url("./assets/bg.jpg");
     background-size: 100%;
     grid-area: d;
 }
 .e {
-    background-image: url("./assets/5.jpeg");
+    background-image: url("./assets/bg.jpg");
     background-size: 100%;
     grid-area: e;
 }
@@ -82,25 +86,26 @@ main {
 }
 
 .content {
-    border-style: dotted;
-    border-radius: 10px;
-    background-color: beige;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(201, 38, 38);
     display: flex;
+    opacity: 1;
+    background-image: linear-gradient(to bottom,  rgba(255, 0, 0, 0),
+    rgba(0, 0, 0, 0.5));
     flex-direction: column;
+    justify-content: space-between;
     padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
+    margin: 0px 0px 0px 0px;
 }
 
 .content span {
-    color: black;
-    font-size: 0.75em;
+    color: gray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.9em;
 }
 
 .content header {
-    font-size: 1.2em;
-    color: brown;
+    font-size: 1.5em;
+    color: white;
 }
 
 .content .tags {
@@ -108,16 +113,17 @@ main {
 }
 
 .content .tags .tag {
-    font-size: small;
+    font-size: 0.6em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-radius: 5px;
-    background-color: blue;
+    border-radius: 2px;
+    background-color: rgb(255, 0, 89);
     margin-right: 10px;
-    padding: 4px 4px 4px 4px;
+    padding: 5px 5px 5px 5px;
     color: white;
 }
 
 .article {
+    opacity: 1;
     display: flex;
     flex-direction: column;
     justify-content: end;
