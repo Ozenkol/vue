@@ -4,10 +4,10 @@
             <span @click="clickOutside()">MENU</span>
         </div>
         <ul>
-            <li>ADVENTURE BLOG</li>
-            <li>NATURE BLOG</li>
-            <li>FASHION BLOG</li>
-            <li>MODERN BLOG</li>
+            <li @click="selectTopicAdv">ADVENTURE BLOG</li>
+            <li @click="selectTopicNat">NATURE BLOG</li>
+            <li @click="selectTopicFash">FASHION BLOG</li>
+            <li @click="selectTopicMod">MODERN BLOG</li>
             <div class="footer-box">
                 <Footer></Footer>
             </div>
@@ -34,6 +34,18 @@
         methods: {
             clickOutside() {
                 return this.$emit("mounted_side")
+            },
+            selectTopicAdv() {
+                return this.$emit('toggled_topic', 'Adventure')
+            },
+            selectTopicNat() {
+                return this.$emit('toggled_topic', 'Nature')
+            },
+            selectTopicFash() {
+                return this.$emit('toggled_topic', 'Fashion')
+            },
+            selectTopicMod() {
+                return this.$emit('toggled_topic', 'Modern')
             }
         }
     }

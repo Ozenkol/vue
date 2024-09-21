@@ -5,7 +5,7 @@
                 <Date></Date>
             </div>
             <div class="title-filter-nextPage">
-                <span class="heading">Adventure</span>
+                <span class="heading">{{topic}}</span>
                 <div class="filter-box">
                     <select v-model="sortType" v-on:change="one">
                         <option value="rating">Rating</option>
@@ -14,7 +14,7 @@
                 </div>
                 <div class="next-box">
                     <NextButton @click="nextPage()"></NextButton>
-                    <span class="page-number">{{ pageNumber }}/{{ pageCount() }}</span>
+                    <span class="page-number">{{ pageNumber + 1 }}/{{ pageCount() }}</span>
                 </div>
             </div>
             <div class="grid">
@@ -39,12 +39,13 @@ import Filter from './Filter.vue';
                 type:Number,
                 required:false,
                 default: 4
-            }
+            },
+            topic: String
         },
         data(){
             return {
                 pageNumber: 0,
-                sortType: "rating"
+                sortType: "rating",
             }
         },
         mounted() {
@@ -80,7 +81,7 @@ import Filter from './Filter.vue';
             },
             nextPage() {
                 console.log(this.pageNumber)
-                this.pageNumber = (this.pageNumber + 1) % this.pageCount()
+                this.pageNumber = (this.pageNumber + 1)  % this.pageCount() 
             },
             pageCount(){
                 let l = this.listData.length,

@@ -89,7 +89,6 @@
     }
     .like-button {
         cursor: pointer;
-
         color: white;
         padding: 2px 1em 2px 1em;
         margin-bottom: 5px;
